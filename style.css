@@ -460,7 +460,8 @@ textarea::placeholder {
   }
   .about,
   .skills,
-  .projects {
+  .projects,
+  .contact {
     padding: 50px 80px;
   }
   .first-section {
@@ -475,7 +476,8 @@ textarea::placeholder {
   }
   .about h1,
   .skills h1,
-  .projects h1 {
+  .projects h1,
+  .contact h1 {
     font-size: 40px;
   }
 
@@ -580,13 +582,16 @@ textarea::placeholder {
   .first-section {
     flex-direction: column-reverse;
     text-align: center;
+    justify-content: center;
+    align-items: center; /* Add this */
+    gap: 0;
     padding-top: 0;
     margin-top: 0;
   }
 
   .title {
     max-width: 100%;
-    margin: -15px 0 0 0;
+    margin: -40px 0 0 0;
   }
   .title h1 {
     font-size: 27px;
@@ -616,13 +621,26 @@ textarea::placeholder {
     display: inline-block;
     margin: 0 10px 28px;
   }
+
   .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     transform: scale(0.6);
     transform-origin: center;
-    margin: 0 auto;
+    width: 100%;
   }
+
   .skills {
     padding: 50px;
+  }
+  .footer {
+    padding: 0 20px;
+  }
+
+  .footer p {
+    font-size: 15px;
   }
   @keyframes zoomIn {
     0% {
