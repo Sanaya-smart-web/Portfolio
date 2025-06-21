@@ -352,7 +352,7 @@ nav a:hover {
   color: white;
   font-size: 23px;
 }
-textarea {
+.contact-form textarea {
   resize: none;
   padding: 15px;
   height: 200px;
@@ -487,9 +487,9 @@ textarea::placeholder {
   .cards-container {
     grid-template-columns: 1fr 1fr;
   }
-  .contact {
+  /* .contact {
     padding: 0;
-  }
+  } */
 }
 
 @media (max-width: 920px) {
@@ -631,6 +631,10 @@ textarea::placeholder {
     transform-origin: center;
     width: 100%;
   }
+
+  /* .contact-form {
+    width: 70%;
+  } */
 
   .skills {
     padding: 50px;
