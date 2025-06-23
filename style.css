@@ -12,6 +12,8 @@ body {
 .main {
   min-height: 100vh;
   color: white;
+  display: flex;
+  flex-direction: column;
   padding: 0 150px;
 }
 header {
@@ -344,6 +346,7 @@ nav a:hover {
   flex-wrap: wrap;
 }
 .row input {
+  flex: 1;
   padding: 15px;
   background-color: #d6d6d64f;
   border: none;
@@ -532,7 +535,7 @@ textarea::placeholder {
     padding: 30px 30px;
   }
   .main {
-    padding: 0 30px;
+    padding: 0 30px 10px;
   }
   .title h1 {
     font-size: 30px;
@@ -655,6 +658,15 @@ textarea::placeholder {
 
   .contact-form {
     width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .row input {
+    width: 100%;
   }
 
   @keyframes zoomIn {
